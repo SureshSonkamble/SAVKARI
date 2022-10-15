@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/edittext_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="end"
+        android:textColor="#ffffff"
+        android:src="@drawable/icon_popoup_cancel"/>
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <!--Top Header Layout-->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:padding="18dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan EMI Collection"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:padding="05dp"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Loan Type     :"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_type"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="ss"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="05dp"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="EMI Amount :"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_emi"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="ss"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <View
+                android:layout_marginTop="05dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <!--Top Profile Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circularbordersolid"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <View
+                    android:layout_marginTop="05dp"
+                    android:background="@color/purple_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/edit_linaer"
+                    >
+                     <ImageView
+                         android:layout_gravity="center"
+                         android:id="@+id/img_date"
+                         android:layout_width="80dp"
+                         android:layout_height="80dp"
+                         android:src="@drawable/money"
+                         />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/purple_500"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:background="@drawable/edit_text_border"
+                            android:textColor="@color/black"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:id="@+id/txt_emi_amt"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:inputType="number"
+                            android:hint="Enter EMI Amount"
+                            android:singleLine="true"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+                <!-- Text Label -->
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_500"/>
+            </LinearLayout>
+
+            <!--Option Bar-->
+
+            <!--Bootom Cards with sections-->
+
+        </LinearLayout>
+
+</LinearLayout>

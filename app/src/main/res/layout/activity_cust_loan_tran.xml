@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+    <include layout="@layout/toolbar_home"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pgb"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:layout_marginTop="05dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="Doc No."
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/edittext_border"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:text="Doc. Dt."
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/edittext_border"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:text="Name"
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/edittext_border"
+                                    android:layout_width="150dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:text="EMI Amt."
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/edittext_border"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:text="LDoc No."
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/edittext_border"
+                                    android:layout_width="60dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"/>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_marginTop="05dp"
+                                android:id="@+id/recycler_cust_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="450dp"
+                                />
+                            <View
+                                android:background="@color/purple_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"/>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="180dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="Total Collection :"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                             />
+                            <TextView
+                                android:layout_gravity="center"
+                                android:id="@+id/txt_ttl"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/edittext_border"
+                                android:gravity="center"
+                                android:text="00.00"
+                                android:textColor="#ffffff" />
+                            </LinearLayout>
+                            <View
+                                android:background="@color/purple_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"/>
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/txt_synk"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/edittext_border"
+                                android:gravity="center"
+                                android:text="Synchronize Data"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

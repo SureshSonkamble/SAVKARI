@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#293859</color>
+    <color name="purple_500">#293859</color>
+    <color name="purple_700">#293859</color>
+    <color name="teal_200">#293859</color>
+    <color name="teal_700">#293859</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#293859</color>
+    <color name="colorPrimaryDark">#293859</color>
+    <color name="colorAccent">#293859</color>
+    <color name="loginbackground">#532eb9f2</color>
+    <color name="whitecolour">#FFFFFF</color>
+    <color name="blackcolour">#000000</color>
+    <color name="lightgray">#104b4545</color>
+    <color name="grey">#E9EAEE</color>
+    <color name="darkgray">#746f6f</color>
+    <color name="text_selected">#535252</color>
+    <color name="transparent_bg">#00ffffff</color>
+    <color name="background_login">#5080c7f1</color>
+    <color name="background_full_login">#8075c1ed</color>
+    <color name="background_home">#e9ffffff</color>
+    <color name="background_punch">#87eadfdf</color>
+    <color name="background_singleshop">#c9000000</color>
+    <color name="background_singleshop_new">#42000000</color>
+    <color name="background_signup">#aa000000</color>
+    <color name="floatback">#2591d0</color>
+    <color name="faint_white">#3fffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="deeppurple">#2591d0</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+</resources>
